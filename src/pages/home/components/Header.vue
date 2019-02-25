@@ -30,7 +30,8 @@ export default {
       float: left
       .back-icon
         text-align: center
-        font-size: .4rem
+        font-size: .36rem
+        font-weight: bold
     .header-input
       flex: 1
       margin-top: .12rem
@@ -38,7 +39,7 @@ export default {
       padding-left: .2rem
       height: .64rem
       background: #fff
-      border-radius: .1rem
+      border-radius: .05rem
       color: #ccc
       line-height: .64rem
     .header-right
@@ -47,5 +48,4 @@ export default {
       text-align: center
       .arrow-icon
         margin-left: -.06rem
-        font-size: .2rem
 </style>
