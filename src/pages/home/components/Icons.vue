@@ -103,6 +103,8 @@ export default {
 }
 .icon-wrapper >>> .swiper-pagination-bullet {
   background: rgba(144,144,144,0.8);
+  width: 6px;
+  height: 6px;
 }
 .icon-wrapper >>> .swiper-pagination-bullet-active {
   background: rgba(0,175,190,.8);
@@ -113,6 +115,7 @@ export default {
 }
 .icon-wrapper {
   padding-top: 0.1rem;
+  background: #fff;
 
   .icon {
     position: relative;
@@ -142,7 +145,6 @@ export default {
       overflow: hidden
       white-space: nowrap
       text-overflow: ellipsis
-
     }
   }
 }
