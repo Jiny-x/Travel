@@ -4,6 +4,7 @@
         <home-swiper></home-swiper>
         <home-icons></home-icons>
         <home-nearby></home-nearby>
+        <home-weekhot></home-weekhot>
         <home-recommend></home-recommend>
     </div>
 </template>
@@ -14,6 +15,7 @@ import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeNearby from './components/Nearby'
+import HomeWeekhot from './components/Weekhot'
 
 export default {
   name: 'Home',
@@ -22,7 +24,8 @@ export default {
     HomeSwiper,
     HomeIcons,
     HomeRecommend,
-    HomeNearby
+    HomeNearby,
+    HomeWeekhot
   }
 }
 </script>

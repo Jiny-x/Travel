@@ -98,6 +98,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  @import '~styles/mixins.styl'
 .icon-wrapper >>> .swiper-container {
   height: 3.7rem
 }
@@ -142,9 +143,7 @@ export default {
       margin: 0.1rem auto 0;
       font-size: 0.28rem;
       color: #212121;
-      overflow: hidden
-      white-space: nowrap
-      text-overflow: ellipsis
+      ellipsis()
     }
   }
 }
