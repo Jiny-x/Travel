@@ -10,7 +10,7 @@
       </div>
     </div>
     <ul class="weekhot-item-wrapper">
-      <li class="weekhot-item" v-for="item of weekhotList" :key="item.id">
+      <li class="weekhot-item" v-for="item of sight" :key="item.id">
         <img class="weekhot-item-img" :src="item.imgUrl">
         <h5 class="weekhot-tiem-title">{{item.title}}</h5>
         <div class="price-wrapper">
@@ -29,7 +29,7 @@ export default {
   name: 'HomeWeekhot',
   data () {
     return {
-      weekhotList: [
+      sight: [
         {
           id: '0001',
           title: '重庆园博园',
@@ -92,15 +92,14 @@ export default {
   },
   methods: {
     topFilter: function () {
-      this.weekhotList.forEach((item, index) => {
+      this.sight.forEach((item, index) => {
         if (index <= 2) {
-          let listItem = this.weekhotList[index]
+          let listItem = this.sight[index]
           listItem.topIconShow = true
           listItem.topIcon = this.topIconList[index]
-          this.weekhotList.splice(index, 1, listItem)
+          this.sight.splice(index, 1, listItem)
         }
       })
-      // return this.weekhotList
     }
   }
 }
