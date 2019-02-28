@@ -6,6 +6,7 @@
         <home-nearby></home-nearby>
         <home-weekhot></home-weekhot>
         <home-like></home-like>
+        <home-weekend></home-weekend>
     </div>
 </template>
 
@@ -16,6 +17,7 @@ import HomeIcons from './components/Icons'
 import HomeNearby from './components/Nearby'
 import HomeWeekhot from './components/Weekhot'
 import HomeLike from './components/Like'
+import HomeWeekend from './components/Weekend'
 
 export default {
   name: 'Home',
@@ -25,7 +27,8 @@ export default {
     HomeIcons,
     HomeNearby,
     HomeWeekhot,
-    HomeLike
+    HomeLike,
+    HomeWeekend
   }
 }
 </script>

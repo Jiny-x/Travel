@@ -123,7 +123,7 @@ export default {
         color: #ff6052
     .item-wrapper
       margin-left: .24rem
-      padding: .2rem .2rem .2rem 0
+      padding: .2rem .4rem .2rem 0
       .item-img
         float: left
         overflow: hidden
