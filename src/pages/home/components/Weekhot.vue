@@ -10,14 +10,14 @@
       </div>
     </div>
     <ul class="weekhot-item-wrapper">
-      <li class="weekhot-item" v-for="item of sight" :key="item.id">
+      <li class="weekhot-item" v-for="(item, index) of topList" :key="item.id">
         <img class="weekhot-item-img" :src="item.imgUrl">
         <h5 class="weekhot-tiem-title">{{item.title}}</h5>
         <div class="price-wrapper">
           <span class="price">¥{{item.price}}</span><span class="price-state">起</span>
         </div>
-        <div class="weekhot-top" v-if="item.topIconShow">
-          <img :src="item.topIcon">
+        <div class="weekhot-top" v-if="index < 3">
+          <img :src="topIconList[index]">
         </div>
       </li>
     </ul>
@@ -27,79 +27,17 @@
 <script>
 export default {
   name: 'HomeWeekhot',
+  props: {
+    topList: Array
+  },
   data () {
     return {
-      sight: [
-        {
-          id: '0001',
-          title: '重庆园博园',
-          price: '4.3',
-          hits: '900',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1711/c7/c79ecb5075f17c53a3.img.jpg_250x250_e5ff093e.jpg'
-        },
-        {
-          id: '0002',
-          title: '重庆欢乐谷',
-          price: '150',
-          hits: '800',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1805/ad/ad507355a167f587a3.img.jpg_250x250_608b4e13.jpg'
-        },
-        {
-          id: '0003',
-          title: '武隆天坑地缝国家地质公园',
-          price: '48',
-          hits: '750',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/be/be4802e10f3b3107.water.jpg_250x250_45ab93e6.jpg'
-        },
-        {
-          id: '0004',
-          title: '重庆长江索道',
-          price: '28',
-          hits: '700',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1805/ad/ad507355a167f587a3.img.jpg_250x250_608b4e13.jpg'
-        },
-        {
-          id: '0005',
-          title: '洪崖洞',
-          price: '48',
-          hits: '650',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/12/ed83b9bb54ccc7ff1f0989a7ebc2e312.jpg_250x250_fa63b5e9.jpg'
-        },
-        {
-          id: '0006',
-          title: '重庆两江夜游',
-          price: '108',
-          hits: '600',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1810/36/36ed80c6e147d019a3.img.png_250x250_d039f35c.png'
-        },
-        {
-          id: '0007',
-          title: '梦幻奥陶纪',
-          price: '48',
-          hits: '560',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/be/be4802e10f3b3107.water.jpg_250x250_45ab93e6.jpg'
-        }
-      ],
+      topSight: [],
       topIconList: [
         'http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png',
         'http://img1.qunarzz.com/piao/fusion/1710/2d/36d0c4adaebbbc02.png',
         'http://img1.qunarzz.com/piao/fusion/1710/67/edc47ffef9e96b02.png'
       ]
-    }
-  },
-  mounted () {
-    this.topFilter()
-  },
-  methods: {
-    topFilter: function () {
-      this.sight.forEach((item, index) => {
-        if (index <= 2) {
-          let listItem = this.sight[index]
-          listItem.topIconShow = true
-          listItem.topIcon = this.topIconList[index]
-          this.sight.splice(index, 1, listItem)
-        }
-      })
     }
   }
 }

@@ -17,68 +17,15 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    iconList: Array
+  },
   data () {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
         autoplay: 0
-      },
-      iconList: [
-        {
-          id: '0101',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-          desc: '景点门票',
-          url: ''
-        },
-        {
-          id: '0102',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
-          desc: '一日游',
-          url: ''
-        },
-        {
-          id: '0103',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-          desc: '重庆必游',
-          url: ''
-        },
-        {
-          id: '0104',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png',
-          desc: '踏青赏花',
-          url: ''
-        },
-        {
-          id: '0105',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/fa/2548667cb6e902.png',
-          desc: '室内场馆',
-          url: ''
-        },
-        {
-          id: '0106',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/89/55083b0f1951f302.png',
-          desc: '两江夜游',
-          url: ''
-        },
-        {
-          id: '0107',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-          desc: '神秘武隆',
-          url: ''
-        },
-        {
-          id: '0108',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
-          desc: '泡温泉',
-          url: ''
-        },
-        {
-          id: '0109',
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/97/02f5043b51b2102.png',
-          desc: '奥陶记',
-          url: ''
-        }
-      ]
+      }
     }
   },
   computed: {
