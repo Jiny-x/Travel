@@ -1,0 +1,271 @@
+{
+  "ret": true,
+  "data": {
+    "swiperList": [{
+        "id": "001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1812/d1/cd4f32e924a5a302.jpg_750x200_3d492837.jpg"
+      }, {
+        "id": "002",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20192/9f73976e40c4ef845cabe0efc0269ebb.jpg_750x200_aab92b7a.jpg"
+      }, {
+        "id": "003",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/31/da037478f37cf202.jpg_750x200_fe28d396.jpg"
+      },
+      {
+        "id": "004",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20191/a211765c0bb579b18c6e7d6d75997a48.jpg_750x200_b6921fa6.jpg"
+      },
+      {
+        "id": "005",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1808/70/5603e6a535062402.jpg_750x200_2c552f2c.jpg"
+      },
+      {
+        "id": "006",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20192/c64e6f7308f67f0862adb64b9d9fcff0.jpg_750x200_37c4c320.jpg"
+      }
+    ],
+    "iconList": [{
+        "id": "0101",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票",
+        "url": ""
+      },
+      {
+        "id": "0102",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+        "desc": "一日游",
+        "url": ""
+      },
+      {
+        "id": "0103",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+        "desc": "重庆必游",
+        "url": ""
+      },
+      {
+        "id": "0104",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+        "desc": "踏青赏花",
+        "url": ""
+      },
+      {
+        "id": "0105",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/fa/2548667cb6e902.png",
+        "desc": "室内场馆",
+        "url": ""
+      },
+      {
+        "id": "0106",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/89/55083b0f1951f302.png",
+        "desc": "两江夜游",
+        "url": ""
+      },
+      {
+        "id": "0107",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
+        "desc": "神秘武隆",
+        "url": ""
+      },
+      {
+        "id": "0108",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+        "desc": "泡温泉",
+        "url": ""
+      },
+      {
+        "id": "0109",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/97/02f5043b51b2102.png",
+        "desc": "奥陶记",
+        "url": ""
+      }
+    ],
+    "topList": [{
+        "id": "0001",
+        "title": "重庆园博园",
+        "price": "4.3",
+        "seat": "渝中区",
+        "hits": "900",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1711/c7/c79ecb5075f17c53a3.img.jpg_250x250_e5ff093e.jpg"
+      },
+      {
+        "id": "0009",
+        "title": "重庆欢乐海底世界",
+        "price": "110",
+        "seat": "渝中区",
+        "hits": "900",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1609/2b/2b0dd15479a86c86a3.img.jpg_200x200_d4d013fb.jpg"
+      },
+      {
+        "id": "0002",
+        "title": "重庆欢乐谷",
+        "price": "150",
+        "seat": "渝中区",
+        "hits": "800",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1805/ad/ad507355a167f587a3.img.jpg_250x250_608b4e13.jpg"
+      },
+      {
+        "id": "0003",
+        "title": "武隆天坑地缝国家地质公园",
+        "price": "48",
+        "seat": "渝中区",
+        "hits": "750",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1505/be/be4802e10f3b3107.water.jpg_250x250_45ab93e6.jpg"
+      },
+      {
+        "id": "0004",
+        "title": "重庆长江索道",
+        "price": "28",
+        "seat": "渝中区",
+        "hits": "700",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1805/ad/ad507355a167f587a3.img.jpg_250x250_608b4e13.jpg"
+      },
+      {
+        "id": "0005",
+        "title": "洪崖洞",
+        "price": "48",
+        "seat": "渝中区",
+        "hits": "650",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/12/ed83b9bb54ccc7ff1f0989a7ebc2e312.jpg_250x250_fa63b5e9.jpg"
+      },
+      {
+        "id": "0006",
+        "title": "重庆两江夜游",
+        "price": "108",
+        "seat": "渝中区",
+        "hits": "600",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1810/36/36ed80c6e147d019a3.img.png_250x250_d039f35c.png"
+      },
+      {
+        "id": "0007",
+        "title": "梦幻奥陶纪",
+        "price": "48",
+        "seat": "渝中区",
+        "hits": "560",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1707/c5/c568c1adf9b18efa3.img.jpg_250x250_939e79c6.jpg"
+      }
+    ],
+    "sight": [{
+        "id": "0005",
+        "title": "洪崖洞",
+        "price": "48",
+        "seat": "渝中区",
+        "hits": "650",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/12/ed83b9bb54ccc7ff1f0989a7ebc2e312.jpg_250x250_fa63b5e9.jpg"
+      },
+      {
+        "id": "0002",
+        "title": "重庆欢乐谷",
+        "price": "150",
+        "seat": "渝中区",
+        "hits": "800",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1805/ad/ad507355a167f587a3.img.jpg_250x250_608b4e13.jpg"
+      },
+      {
+        "id": "0001",
+        "title": "重庆园博园",
+        "price": "4.3",
+        "seat": "渝中区",
+        "hits": "900",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1711/c7/c79ecb5075f17c53a3.img.jpg_250x250_e5ff093e.jpg"
+      },
+      {
+        "id": "0009",
+        "title": "重庆欢乐海底世界",
+        "price": "110",
+        "seat": "渝中区",
+        "hits": "900",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1609/2b/2b0dd15479a86c86a3.img.jpg_200x200_d4d013fb.jpg"
+      },
+      {
+        "id": "0004",
+        "title": "重庆长江索道",
+        "price": "28",
+        "seat": "渝中区",
+        "hits": "700",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1805/ad/ad507355a167f587a3.img.jpg_250x250_608b4e13.jpg"
+      },
+      {
+        "id": "0003",
+        "title": "武隆天坑地缝国家地质公园",
+        "price": "48",
+        "seat": "渝中区",
+        "hits": "750",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1505/be/be4802e10f3b3107.water.jpg_250x250_45ab93e6.jpg"
+      },
+      {
+        "id": "0006",
+        "title": "重庆两江夜游",
+        "price": "108",
+        "seat": "渝中区",
+        "hits": "600",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1810/36/36ed80c6e147d019a3.img.png_250x250_d039f35c.png"
+      },
+      {
+        "id": "0007",
+        "title": "梦幻奥陶纪",
+        "price": "48",
+        "seat": "渝中区",
+        "hits": "560",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1707/c5/c568c1adf9b18efa3.img.jpg_250x250_939e79c6.jpg"
+      }
+    ],
+    "recommendList": [{
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
+      "title": "故宫",
+      "desc": "东方宫殿建筑代表，世界宫殿建筑典范"
+    }, {
+      "id": "0002",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
+      "title": "南山滑雪场",
+      "desc": "北京专业级滑雪圣地"
+    }, {
+      "id": "0003",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
+      "title": "天安门广场",
+      "desc": "我爱北京天安门，天安门上太阳升"
+    }, {
+      "id": "0004",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_140x140_1c863e5c.jpg",
+      "title": "水立方",
+      "desc": "中国的荣耀，阳光下的晶莹水滴"
+    }, {
+      "id": "0005",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/201308/23/b283071686e64dfec8d65eac.jpg_140x140_8c5a7c49.jpg",
+      "title": "温都水城养生馆",
+      "desc": "各种亚热带植物掩映其间仿佛置身热带雨林"
+    }],
+    "weekendSight": [{
+        "id": "0001",
+        "title": "重庆夜景大赏",
+        "message": "",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1812/4c/33ad31d025fef.jpg_r_640x214_7821b813.jpg"
+      },
+      {
+        "id": "0002",
+        "title": "重庆优质汤泉",
+        "message": "",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/5f/276ed6784d25ee.jpg_r_640x214_2193082e.jpg"
+      },
+      {
+        "id": "0003",
+        "title": "重庆必打卡",
+        "message": "",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/53/4bcd11cc3a5374.jpg_r_640x214_988a4cee.jpg"
+      },
+      {
+        "id": "0004",
+        "title": "重庆大美古镇",
+        "message": "",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/48/f117e9b3bf582a.jpg_r_640x214_b8145711.jpg"
+      },
+      {
+        "id": "0005",
+        "title": "本地人带你耍",
+        "message": "",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1506/1e/f97881dbd07520.jpg_r_640x214_f8c25916.jpg"
+      }
+    ],
+    "city": "重庆"
+  }
+}
