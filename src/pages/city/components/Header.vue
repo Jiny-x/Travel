@@ -16,6 +16,7 @@ export default {
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
   .head-wrapper
+    position: relative
     width: 100%
     height: .86rem
     line-height: .86rem
@@ -23,11 +24,12 @@ export default {
     color: #fff
     background: $bgColor
     .back-left
-      float: left
       width: .64rem
       font-size: .36rem
       font-weight: bold
       color: #fff
+      position: absolute
+      left: 0
     .head-title
       font-size: .32rem
 </style>
