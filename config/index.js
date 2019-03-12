@@ -12,10 +12,11 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'https://www.wanandroid.com/tools/mockapi/20326/json',
         changeOrigin: true,
+        secure: false,
         pathRewrite: {
-          '^/api': '/static/mock'
+          '^/api': '/api'
         }
       }
     },
