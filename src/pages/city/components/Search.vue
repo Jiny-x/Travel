@@ -5,7 +5,7 @@
     </div>
     <div class="list-wrapper" v-show="this.inputValue" ref="listWrapwer">
       <ul>
-        <li class="item border-bottom" v-for="(item,index) of this.valueList" :key="index">{{ item.name }}</li>
+        <li class="item border-bottom" v-for="(item,index) of this.valueList" :key="index" @click="cityClick(item.name)">{{ item.name }}</li>
         <li class="item" v-show="noValue">未找到匹配项</li>
       </ul>
     </div>
@@ -27,6 +27,12 @@ export default {
   },
   props: {
     cities: Object
+  },
+  methods: {
+    cityClick (city) {
+      this.$store.commit('changeCity', city)
+      this.$router.push('/')
+    }
   },
   watch: {
     inputValue () {

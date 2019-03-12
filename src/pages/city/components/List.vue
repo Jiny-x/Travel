@@ -4,13 +4,13 @@
       <div class="city hot-city">
         <div class="title">热门城市</div>
         <div class="item-wrapper">
-          <div class="item" v-for="item of hotCities" :key="item.id">{{ item.name }}</div>
+          <div class="item" v-for="item of hotCities" :key="item.id" @click="cityClick(item.name)">{{ item.name }}</div>
         </div>
       </div>
       <div class="city" v-for="(item, key) of cities" :key="key" :ref="key">
         <div class="title">{{ key }}</div>
         <div class="item-wrapper">
-          <div class="item" v-for="innerItem of item" :key="innerItem.id">{{ innerItem.name }}</div>
+          <div class="item" v-for="innerItem of item" :key="innerItem.id" @click="cityClick(innerItem.name)">{{ innerItem.name }}</div>
         </div>
       </div>
     </div>
@@ -25,6 +25,12 @@ export default {
     cities: Object,
     hotCities: Array,
     letter: String
+  },
+  methods: {
+    cityClick (city) {
+      this.$store.commit('changeCity', city)
+      this.$router.push('/')
+    }
   },
   watch: {
     letter () {
