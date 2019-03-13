@@ -32,6 +32,7 @@ export default {
     cityClick (city) {
       this.$store.commit('changeCity', city)
       this.$router.push('/')
+      this.inputValue = ''
     }
   },
   watch: {
@@ -61,7 +62,7 @@ export default {
     }
   },
   mounted () {
-    this.scroll = new Bscroll(this.$refs.listWrapwer)
+    this.scroll = new Bscroll(this.$refs.listWrapwer, {click: true})
   }
 }
 </script>

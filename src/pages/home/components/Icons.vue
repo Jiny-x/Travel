@@ -87,7 +87,7 @@ export default {
 
     .icon-title {
       background: 0;
-      margin: 0.1rem auto 0;
+      padding: .1rem 0 0;
       font-size: 0.28rem;
       color: #212121;
       ellipsis()

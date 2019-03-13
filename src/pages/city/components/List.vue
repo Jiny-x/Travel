@@ -19,6 +19,7 @@
 
 <script>
 import Bscroll from 'better-scroll'
+
 export default {
   name: 'List',
   props: {
@@ -41,7 +42,7 @@ export default {
     }
   },
   mounted () {
-    this.scroll = new Bscroll(this.$refs.wrapper)
+    this.scroll = new Bscroll(this.$refs.wrapper, {click: true})
   }
 }
 </script>

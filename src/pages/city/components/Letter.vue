@@ -75,6 +75,7 @@ export default {
     right: 0
     bottom: 0
     width: .4rem
+    min-height: 10.2rem
     color: $bgColor
     .letter
       font-size: .24rem
