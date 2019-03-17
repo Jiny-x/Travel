@@ -4,7 +4,7 @@
       <span class="iconfont like-icon">&#xe641;</span><span>猜你喜欢</span>
     </div>
     <ul class="item-list-wrapper">
-      <li class="item-wrapper border-bottom" v-for="item of sight" :key="item.id">
+      <router-link tag="li" :to="'/Detail/' + item.id" class="item-wrapper border-bottom" v-for="item of sight" :key="item.id">
         <div class="item-img">
           <img :src="item.imgUrl">
           <div class="item-img-mes"></div>
@@ -22,7 +22,7 @@
             <div class="seat">{{ item.seat }}</div>
           </div>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>

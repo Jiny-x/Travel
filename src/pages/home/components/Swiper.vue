@@ -35,7 +35,9 @@ export default {
 .wrapper >>> .swiper-pagination-bullet-active {
   background: #fff;
 }
-
+.wrapper >>> .swiper-pagination-bullet
+  width: 6px;
+  height: 6px;
 .wrapper {
   overflow: hidden;
   width: 100%;

@@ -1,0 +1,95 @@
+<template>
+  <div class="sight-imgs">
+    <div class="sight-img-header boder-bottom">
+      <h1 class="title">景区图片</h1>
+      <div class="back-icon iconfont" @click="backRouter">&#xe624;</div>
+    </div>
+    <div class="sight-imgs-wrapper" ref="wrapper">
+      <div class="sight-content">
+        <div class="img-wrapper" v-for="(item, index) of sightImgs" :key="index" ref="img">
+          <img class="img" @click="imgClick" @touchstart="imgTouch" :src="item">
+        </div>
+      </div>
+    </div>
+    <common-gallery v-if="galleryShow" @close="imgClick" :sightImgs="sightImgs" :imgIndex="imgIndex"></common-gallery>
+  </div>
+</template>
+
+<script>
+import CommonGallery from 'common/gallery/Gallery'
+import Bscroll from 'better-scroll'
+import { mapState } from 'vuex'
+
+export default {
+  name: 'DetailSightImgs',
+  data () {
+    return {
+      galleryShow: false,
+      imgIndex: 0
+    }
+  },
+  components: {
+    CommonGallery
+  },
+  computed: {
+    ...mapState(['sightImgs'])
+  },
+  methods: {
+    backRouter () {
+      this.$router.go(-1)
+    },
+    imgClick () {
+      this.galleryShow = !this.galleryShow
+    },
+    imgTouch (e) {
+      this.$refs.img.forEach((item, index) => {
+        let _this = this
+        item.onclick = function () {
+          _this.imgIndex = index
+        }
+      })
+    }
+  },
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper, {click: true})
+    console.log(this.sightImgs)
+    console.log(this.$store.state)
+  }
+}
+</script>
+
+<style lang="stylus" scoped>
+  .sight-img-header
+    position: relative
+    height: .86rem
+    .title
+      font-size: .32rem
+      line-height: .86rem
+      text-align: center
+    .back-icon
+      position: absolute
+      top: 0
+      left: .2rem
+      line-height: .86rem
+      font-size: .36rem
+      font-weight: bold
+  .sight-imgs-wrapper
+    overflow: hidden
+    position: absolute
+    top: .86rem
+    left: 0
+    bottom: 0
+    right: 0
+    .sight-content
+      display: flex
+      flex-wrap: wrap
+      padding: .1rem .1rem 0
+      background: #f5f5f5
+      .img-wrapper
+        box-sizing: border-box
+        width: 50%
+        height: 0
+        padding: .04rem .04rem 34.28%
+        .img
+          width: 100%
+</style>

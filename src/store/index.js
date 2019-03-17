@@ -9,8 +9,8 @@ export default new Vuex.Store({
   state,
   mutations
   // actions: {
-  //   changeCity (ctx, city) {
-  //     ctx.commit('changeCity', city)
+  //   imgShow (ctx, sightImgs) {
+  //     ctx.commit('imgShow', sightImgs)
   //   }
-  // },
+  // }
 })

@@ -49,11 +49,10 @@ export default {
 .icon-wrapper >>> .swiper-container {
   height: 3.7rem
 }
-.icon-wrapper >>> .swiper-pagination-bullet {
+.icon-wrapper >>> .swiper-pagination-bullet
   background: rgba(144,144,144,0.8);
   width: 6px;
   height: 6px;
-}
 .icon-wrapper >>> .swiper-pagination-bullet-active {
   background: rgba(0,175,190,.8);
 }

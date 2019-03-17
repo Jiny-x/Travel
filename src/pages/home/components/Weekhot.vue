@@ -10,7 +10,7 @@
       </div>
     </div>
     <ul class="weekhot-item-wrapper">
-      <li class="weekhot-item" v-for="(item, index) of topList" :key="item.id">
+      <router-link tag="li" :to="'/detail/' + item.id" class="weekhot-item" v-for="(item, index) of topList" :key="item.id">
         <img class="weekhot-item-img" :src="item.imgUrl">
         <h5 class="weekhot-tiem-title">{{item.title}}</h5>
         <div class="price-wrapper">
@@ -19,7 +19,7 @@
         <div class="weekhot-top" v-if="index < 3">
           <img :src="topIconList[index]">
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
