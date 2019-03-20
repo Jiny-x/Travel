@@ -11,12 +11,14 @@
         </div>
       </div>
     </div>
-    <common-gallery v-if="galleryShow" @close="imgClick" :sightImgs="sightImgs" :imgIndex="imgIndex"></common-gallery>
+    <fade-animation><common-gallery v-if="galleryShow" @close="imgClick" :sightImgs="sightImgs" :imgIndex="imgIndex">
+    </common-gallery></fade-animation>
   </div>
 </template>
 
 <script>
 import CommonGallery from 'common/gallery/Gallery'
+import FadeAnimation from 'common/fade/FadeAnimation'
 import Bscroll from 'better-scroll'
 
 export default {
@@ -29,7 +31,8 @@ export default {
     }
   },
   components: {
-    CommonGallery
+    CommonGallery,
+    FadeAnimation
   },
   methods: {
     backRouter () {

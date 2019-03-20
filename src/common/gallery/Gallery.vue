@@ -21,7 +21,7 @@ export default {
         paginationType: 'fraction',
         observer: true,
         observeParents: true,
-        initialSlide: 1,
+        initialSlide: this.imgIndex,
         speed: 150
       }
     }

@@ -3,7 +3,7 @@
     <detail-header></detail-header>
     <detail-banner :sightName="sightName" :bannerImg="bannerImg" :sightImgs="sightImgs"></detail-banner>
     <detail-inforamtion></detail-inforamtion>
-    <detail-tickets></detail-tickets>
+    <detail-tickets :tickets="tickets"></detail-tickets>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
       sightName: '',
       bannerImg: '',
       sightImgs: [],
-      ticketsList: []
+      tickets: []
     }
   },
   components: {
@@ -41,7 +41,7 @@ export default {
         this.sightName = data.sightName
         this.bannerImg = data.bannerImg
         this.sightImgs = data.sightImgs
-        this.ticketsList = data.ticketsList
+        this.tickets = data.ticketsList.tickets
       }
     }
   },

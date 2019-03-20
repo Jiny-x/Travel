@@ -56,7 +56,9 @@ export default {
         }
         this.valueList = wordList
         if (!this.valueList.length) {
-          this.noValue = !this.valueList.length
+          this.noValue = true
+        } else {
+          this.noValue = false
         }
       }, 100)
     }

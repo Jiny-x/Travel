@@ -3,83 +3,13 @@
     <div class="tickets-head iconfont">
       <span class="goodIcon">&#xe618;</span><span class="title">超值推荐</span>
     </div>
-    <div class="ticket-wrapper border-top">
+    <div class="ticket-wrapper border-top" v-for="(item, index) of this.tickets" :key="index">
       <div class="ticket-title-wrapper">
-        <h1 class="ticket-title">长江索道往返索道票成人票</h1>
-        <div class="time iconfont"><span>&#xe647;</span>23:59前可订明日</div>
+        <h1 class="ticket-title">{{item.title}}</h1>
+        <div class="time iconfont"><span>&#xe647;</span>{{item.time}}前可订明日</div>
       </div>
       <div class="ticket-price-wrapper">
-        <div class="ticket-price"><em>¥</em>28.0</div>
-        <button>预定</button>
-      </div>
-    </div>
-    <div class="ticket-wrapper border-top">
-      <div class="ticket-title-wrapper">
-        <h1 class="ticket-title">长江索道往返索道票成人票</h1>
-        <div class="time iconfont"><span>&#xe647;</span>23:59前可订明日</div>
-      </div>
-      <div class="ticket-price-wrapper">
-        <div class="ticket-price"><em>¥</em>28.0</div>
-        <button>预定</button>
-      </div>
-    </div>
-    <div class="ticket-wrapper border-top">
-      <div class="ticket-title-wrapper">
-        <h1 class="ticket-title">长江索道往返索道票成人票</h1>
-        <div class="time iconfont"><span>&#xe647;</span>23:59前可订明日</div>
-      </div>
-      <div class="ticket-price-wrapper">
-        <div class="ticket-price"><em>¥</em>28.0</div>
-        <button>预定</button>
-      </div>
-    </div>
-    <div class="ticket-wrapper border-top">
-      <div class="ticket-title-wrapper">
-        <h1 class="ticket-title">长江索道往返索道票成人票</h1>
-        <div class="time iconfont"><span>&#xe647;</span>23:59前可订明日</div>
-      </div>
-      <div class="ticket-price-wrapper">
-        <div class="ticket-price"><em>¥</em>28.0</div>
-        <button>预定</button>
-      </div>
-    </div>
-    <div class="ticket-wrapper border-top">
-      <div class="ticket-title-wrapper">
-        <h1 class="ticket-title">长江索道往返索道票成人票</h1>
-        <div class="time iconfont"><span>&#xe647;</span>23:59前可订明日</div>
-      </div>
-      <div class="ticket-price-wrapper">
-        <div class="ticket-price"><em>¥</em>28.0</div>
-        <button>预定</button>
-      </div>
-    </div>
-    <div class="ticket-wrapper border-top">
-      <div class="ticket-title-wrapper">
-        <h1 class="ticket-title">长江索道往返索道票成人票</h1>
-        <div class="time iconfont"><span>&#xe647;</span>23:59前可订明日</div>
-      </div>
-      <div class="ticket-price-wrapper">
-        <div class="ticket-price"><em>¥</em>28.0</div>
-        <button>预定</button>
-      </div>
-    </div>
-    <div class="ticket-wrapper border-top">
-      <div class="ticket-title-wrapper">
-        <h1 class="ticket-title">长江索道往返索道票成人票</h1>
-        <div class="time iconfont"><span>&#xe647;</span>23:59前可订明日</div>
-      </div>
-      <div class="ticket-price-wrapper">
-        <div class="ticket-price"><em>¥</em>28.0</div>
-        <button>预定</button>
-      </div>
-    </div>
-    <div class="ticket-wrapper border-top">
-      <div class="ticket-title-wrapper">
-        <h1 class="ticket-title">长江索道往返索道票成人票</h1>
-        <div class="time iconfont"><span>&#xe647;</span>23:59前可订明日</div>
-      </div>
-      <div class="ticket-price-wrapper">
-        <div class="ticket-price"><em>¥</em>28.0</div>
+        <div class="ticket-price"><em>¥</em>{{item.price}}</div>
         <button>预定</button>
       </div>
     </div>
@@ -88,7 +18,10 @@
 
 <script>
 export default {
-  name: 'DetailTickets'
+  name: 'DetailTickets',
+  props: {
+    tickets: Array
+  }
 }
 </script>
 
@@ -117,10 +50,13 @@ export default {
       display: block
       clear: both
     .ticket-wrapper
+      display: flex
+      flex-wrap: nowrap
+      justify-content: space-between
       margin: 0 .2rem
       padding: .2rem 0
       .ticket-title-wrapper
-        float: left
+        width: 80%
         .ticket-title
           font-size: .3rem
           display: -webkit-box
@@ -135,19 +71,23 @@ export default {
           span
             color: $bgColor
       .ticket-price-wrapper
-        float: right
+        box-sizing: border-box
+        width: 20%
+        margin-left: .2rem
         text-align: center
         .ticket-price
-          color: #ff9716
+          color: #ffab1e
           font-size: .4rem
           font-weight: bold
           em
             font-size: .24rem
         button
-          padding: .1rem .4rem
+          height: .6rem
+          line-height: .6rem
+          padding: 0 24%
           border-radius: .08rem
           font-weight: bold
           color: #ffffff
-          background: #ff9716
+          background: #ffab1e
 
 </style>
