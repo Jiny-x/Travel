@@ -1,0 +1,72 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "重庆长江索道(AAAA景区)",
+    "bannerImg": "//img1.qunarzz.com/sight/p0/1805/ad/ad507355a167f587a3.img.jpg_600x330_600e6348.jpg",
+    "sightImgs": ["http://img1.qunarzz.com/sight/p0/1805/ad/ad507355a167f587a3.img.jpg_350x240_1001da6d.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/cd/cdd45bb2105877fea3.img.jpg_350x240_15d8d4ed.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/ba/ba56a51849aa0f7ea3.img.jpg_350x240_04009ef5.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/56/56be18bee257f9b3a3.img.jpg_350x240_5d984e08.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/20/20afe71d4e941035a3.img.jpg_350x240_990ee971.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/bf/bf124e33e8b0d93ea3.img.jpg_350x240_281fe425.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/11/110011db8a19c61da3.img.jpg_350x240_2341239f.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/dc/dc6491d50596ca55a3.img.jpg_350x240_e55d04db.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/45/452587f99c5bc6eba3.img.jpg_350x240_d7c853e7.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/aa/aa02145402033203a3.img.jpg_350x240_155e642d.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/66/665352740b72a8d9a3.img.jpg_350x240_3c1cf0ff.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/e8/e89f6d25c3939652a3.img.jpg_350x240_95c84117.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/56/56a6a95bc1f8c52ba3.img.jpg_350x240_c403e1b7.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/20/2066121ebf22c1f2a3.img.jpg_350x240_b9dff115.jpg",
+      "http://img1.qunarzz.com/sight/p0/1805/b2/b24d06e339164ee2a3.img.jpg_350x240_df02aec7.jpg"
+    ],
+    "ticketsList": {
+      "tickets": [{
+        "id": "001",
+        "title": "长江索道往返索道成人票",
+        "price": "28.8",
+        "time": "23:59"
+      }, {
+        "id": "001",
+        "title": "长江索道观光巴士往返成人票",
+        "price": "10",
+        "time": "23:59"
+      }, {
+        "id": "001",
+        "title": "长江索道往返索道票+观光巴士往返票成人票(提前预订 优惠票 )",
+        "price": "38",
+        "time": "23:59"
+      }, {
+        "id": "001",
+        "title": "长江索道往返索道成人票",
+        "price": "28.8",
+        "time": "23:59"
+      }, {
+        "id": "001",
+        "title": "长江索道往返索道成人票",
+        "price": "28.8",
+        "time": "23:59"
+      }, {
+        "id": "001",
+        "title": "长江索道往返索道成人票",
+        "price": "28.8",
+        "time": "23:59"
+      }, {
+        "id": "001",
+        "title": "长江索道往返索道成人票",
+        "price": "28.8",
+        "time": "23:59"
+      }, {
+        "id": "001",
+        "title": "长江索道往返索道成人票",
+        "price": "28.8",
+        "time": "23:59"
+      }, {
+        "id": "001",
+        "title": "长江索道往返索道成人票",
+        "price": "28.8",
+        "time": "23:59"
+      }
+    ]
+    }
+  }
+}
