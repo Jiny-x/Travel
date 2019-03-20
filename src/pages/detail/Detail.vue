@@ -1,7 +1,7 @@
 <template>
   <div class="detail">
     <detail-header></detail-header>
-    <detail-banner :sightName="sightName" :bannerImg="bannerImg"></detail-banner>
+    <detail-banner :sightName="sightName" :bannerImg="bannerImg" :sightImgs="sightImgs"></detail-banner>
     <detail-inforamtion></detail-inforamtion>
     <detail-tickets></detail-tickets>
   </div>
@@ -43,10 +43,9 @@ export default {
         this.sightImgs = data.sightImgs
         this.ticketsList = data.ticketsList
       }
-      this.$store.commit('imgShow', this.sightImgs)
     }
   },
-  mounted () {
+  created () {
     this.getDetailInfo()
   }
 }

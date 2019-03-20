@@ -1,12 +1,10 @@
 <template>
   <div class="banner">
     <div class="detail-banner-wrapper">
-      <router-link to="/sightimgs">
-        <div class="banner-img-wrapper" @click="imgClick">
-          <img class="banner-img" :src="bannerImg">
-        </div>
-      </router-link>
-      <div class="img-icon iconfont"><span class="icon">&#xe63b;</span><span class="num">{{sightImgs}}</span></div>
+      <div class="banner-img-wrapper" @click="imgClick">
+        <img class="banner-img" :src="bannerImg">
+      </div>
+      <div class="img-icon iconfont"><span class="icon">&#xe63b;</span><span class="num">{{imgsLength}}</span></div>
       <div class="img-title">{{sightName}}</div>
       <router-link to="/">
         <div class="detail-back iconfont">&#xe624;</div>
@@ -17,36 +15,34 @@
 
 <script>
 import CommonGallery from 'common/gallery/Gallery'
-import { mapState } from 'vuex'
 
 export default {
   name: 'DetailBanner',
   data () {
     return {
-      imgsLength: 1,
-      sightImg: []
+      imgsLength: 1
     }
   },
   props: {
     sightName: String,
-    bannerImg: String
-    // sightImgs: Array
+    bannerImg: String,
+    sightImgs: Array
   },
   components: {
     CommonGallery
   },
-  computed: {
-    ...mapState(['sightImgs'])
+  watch: {
+    sightImgs (data) {
+      this.imgsLength = data.length
+    }
   },
   methods: {
     imgClick () {
-      console.log(this.$store.state)
+      this.$router.push('/sightimgs')
     }
   },
-  mounted () {
-    console.log(1)
-    this.sightImg = this.$store.state.sightImgs
-    console.log(this.sightImgs)
+  deactivated () {
+    this.$bus.emit('imgShow', this.sightImgs)
   }
 }
 </script>

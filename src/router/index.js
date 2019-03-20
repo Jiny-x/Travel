@@ -23,11 +23,17 @@ export default new Router({
       path: '/detail/:id',
       name: 'Detail',
       component: Detail
+      // meta: {
+      //   noKeepAlive: true
+      // }
     },
     {
       path: '/sightimgs',
       name: 'SightImgs',
       component: SightImgs
+      // meta: {
+      //   noKeepAlive: true
+      // }
     }
   ]
 })

@@ -18,21 +18,18 @@
 <script>
 import CommonGallery from 'common/gallery/Gallery'
 import Bscroll from 'better-scroll'
-import { mapState } from 'vuex'
 
 export default {
   name: 'DetailSightImgs',
   data () {
     return {
       galleryShow: false,
-      imgIndex: 0
+      imgIndex: 0,
+      sightImgs: []
     }
   },
   components: {
     CommonGallery
-  },
-  computed: {
-    ...mapState(['sightImgs'])
   },
   methods: {
     backRouter () {
@@ -50,10 +47,16 @@ export default {
       })
     }
   },
+  created () {
+    this.$bus.on('imgShow', (imgs) => {
+      this.sightImgs = imgs
+    })
+  },
   mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper, {click: true})
-    console.log(this.sightImgs)
-    console.log(this.$store.state)
+  },
+  deactivated () {
+    this.$bus.off('imgShow')
   }
 }
 </script>
