@@ -5,7 +5,7 @@
       :key="index"
       :ref="item"
       @click="letterClick"
-      @touchstart="touchEnter"
+      @touchstart.prevent="touchEnter"
       @touchmove="touchMove"
       @touchend="touchLeave">{{ item }}</div>
   </div>
